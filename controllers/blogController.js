@@ -44,3 +44,11 @@ exports.deleteBlog = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
+exports.hello = async (req, res) => {  
+  try {
+    res.json({ data: 'ola', status: "success" });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
