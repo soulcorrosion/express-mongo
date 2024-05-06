@@ -18,6 +18,7 @@ pipeline {
             steps {
                 echo 'Testing'                
                 //sh 'npm test'
+                bat 'call npm test'
             }
         }
     }
