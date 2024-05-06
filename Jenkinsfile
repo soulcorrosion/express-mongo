@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Installing dependencies'
                 //sh 'node --version'
-                sh 'npm install'
+                bash 'npm install'
             }
         }
         stage('build') {
