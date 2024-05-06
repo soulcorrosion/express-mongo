@@ -7,12 +7,19 @@ chai.should();
 
 chai.use(chaiHttp);
 
+describe("Ola", () => {
+  it("it should GET all the blogs", (done) => {
+    done();
+  });
+});
+
+
 describe("Blogs", () => {
-  /*beforeEach((done) => {
+  beforeEach((done) => {
     Blog.deleteMany({}).catch((err) => {
       done();
     }).finally(done);
-  });*/  
+  });
   describe("/GET blog", () => {
     it("it should GET all the blogs", (done) => {
       chai

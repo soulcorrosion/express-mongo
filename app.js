@@ -5,8 +5,8 @@ const blogRouter = require("./routes/blogRoutes");
 
 //configure mongoose
 mongoose.connect(
-  //process.env.MONGODB_URI || "mongodb://localhost:27017",
-  process.env.MONGODB_URI || "mongodb://root:root@mongo:27017",
+  process.env.MONGODB_URI || "mongodb://localhost:27017",
+  //process.env.MONGODB_URI || "mongodb://root:root@mongo:27017",
   {
     //useNewUrlParser: true,
     //useUnifiedTopology: true,
